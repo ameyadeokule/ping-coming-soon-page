@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Libre Franklin', sans-serif;
+}
+
+main {
+	max-width: 700px;
+	margin: 60px auto;
+	text-align: center;
+}
+
+h1 {
+	font-weight: 300;
+	font-size: 50px;
+	color: hsl(0, 0%, 59%);
+	margin-bottom: 10px;
+}
+
+h1 span {
+	font-weight: 700;
+	color: hsl(209, 33%, 12%);
+}
+
+h2 {
+	color: hsl(0, 0%, 59%);
+	font-weight: 300;
+}
+
+form {
+	display: flex;
+	align-items: flex-start;
+	margin-top: 40px;
+	text-align: left;
+}
+
+.form-left {
+	flex: 0.7;
+}
+
+input {
+	border: 1px solid hsl(223, 100%, 88%);
+	border-radius: 50px;
+	padding: 20px 25px;
+	width: 100%;
+	font-size: 16px;
+	font-family: 'Libre Franklin', sans-serif;
+	margin-bottom: 15px;
+}
+
+input::placeholder {
+	color: hsl(223, 100%, 88%);
+}
+
+input.error {
+	border-color: hsl(354, 100%, 66%);
+}
+
+input.error::placeholder {
+	color: hsl(354, 100%, 66%);
+}
+
+form small {
+	display: none;
+	color: hsl(354, 100%, 66%);
+	font-style: italic;
+	z-index: 100;
+	margin: 0 20px 40px;
+}
+
+button {
+	color: white;
+	background-color: hsl(223, 87%, 63%);
+	border: none;
+	border-radius: 50px;
+	box-shadow: 0 5px 5px hsl(223, 100%, 88%);
+	font-size: 16px;
+	font-family: 'Libre Franklin', sans-serif;
+	font-weight: 600;
+	padding: 20px 0;
+	margin-left: 20px;
+	flex: 0.3;
+	cursor: pointer;
+}
+
+button:hover {
+	opacity: 0.8;
+}
+
+.hero {
+	max-width: 100%;
+	margin: 60px 0;
+}
+
+.social-links {
+	display: flex;
+	padding: 0;
+	list-style-type: none;
+	align-items: center;
+	justify-content: center;
+}
+
+.social-links li {
+	margin: 10px;
+}
+
+.social-links li a {
+	border: 1px solid hsl(0, 0%, 59%);
+	color: hsl(223, 87%, 63%);
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 18px;
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+	text-decoration: none;
+}
+
+.social-links li a:hover {
+	background-color: hsl(223, 87%, 63%);
+	border-color: hsl(223, 87%, 63%);
+	color: #fff;
+}
+
+footer p {
+	color: hsl(0, 0%, 59%);
+}
+
+@media screen and (max-width: 650px) {
+	form {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.form-left {
+		width: 100%;
+	}
+
+	button {
+		margin-left: 0;
+		width: 100%;
+	}
+}
